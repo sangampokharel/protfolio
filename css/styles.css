@@ -1,0 +1,420 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    height:100%;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+}
+
+.loading{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    
+}
+
+.container{
+    display: none;
+    height: 100%;
+}
+
+.navbar{
+    width:100%;
+    height:50px;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index:2;
+
+
+}
+
+.navbar-header{
+    width:300px;
+    font-size: 20px;
+    font-weight: 300;
+   padding:10px;
+   color:white;
+   font-family: cursive;
+    
+}
+
+
+.navbar-links{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.navbar-links a{
+    color:black;
+    padding:5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin:4px;
+    color:white;
+}
+.navbar-below{
+    width:100%;
+    border:2px solid #39F;
+    position: fixed;
+    left: 0px;
+    top:50px;
+}
+
+ /* .header-image-overlay{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    margin-top:50px;
+    height:100%;
+    width:100%;
+   
+ 
+   
+} */
+
+.header-image{
+    background: url("../images/bg.jpg")  no-repeat center, linear-gradient(rgba(32, 32, 32, 0.2),rgba(7, 7, 7, 0.2));
+    background-size: cover;
+    width:100%;
+    height:100%;
+    margin-top:0px;
+    background-blend-mode: overlay;
+   
+}
+
+
+
+ .header-Text{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+} 
+
+.header-Text h2{
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 45px;
+    color:firebrick;
+    margin:0px;
+    
+
+}
+
+.header-Text h4{
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color:darkgray;
+}
+.skills-set{
+    padding:20px;
+    height:400px;
+   
+}
+
+.skills-header{
+    margin-top:60px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    
+}
+.skills-header h2{
+    font-size: 30px;
+    color:grey;
+    font-family: fantasy;
+    
+}
+
+.skills-info{
+    margin:60px;
+    width:80%;
+    padding:10px; 
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+
+.aboutme{
+    width:100%;
+    padding:20px;
+    background:rgb(219, 217, 217);
+    height: 600px;
+}
+
+.aboutme-header{
+    text-align: center;
+  
+
+}
+.aboutme-header h2{
+    font-size: 30px;
+    font-family: fantasy;
+    color:black;
+}
+
+.aboutme-info{
+    width:100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height:300px;
+    margin-top: 40px;
+}
+
+
+.aboutme-img{
+    border-radius: 50%;
+    width:290px;
+    height:290px;
+    box-shadow: 1px 1px 2px #666;
+    position: relative;
+    
+}
+
+.aboutme-img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 290px;
+    height: 290px;
+    max-height: none;
+    max-width: none;
+  
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 50%;
+  
+
+}
+
+
+
+.aboutme-details{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width:700px;
+    line-height: 2ch;
+    text-align:left;
+
+}
+
+.aboutme-name{
+    padding:2px;
+    width:60%;
+    display:flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin:10px;
+  
+   
+}
+
+.aboutme-name h2{
+    font-size: 50px;
+    font-weight: 500;
+    color:grey;
+    font-family: fantasy;
+    margin:20px;
+
+}
+
+.aboutme-name h4{
+    font-size: 35px;
+    font-weight: 500;
+    color:maroon;
+    font-family: fantasy;
+}
+
+.aboutme-address {
+    width:65%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:10px;
+    padding:2px;
+    
+}
+
+.aboutme-address h4{
+    font-size: 15px;
+    color:grey;
+    font-family: fantasy;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+
+
+.aboutme-saying p{
+    font-size: 15px;
+    color:grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+
+.social-media{
+    display: flex;
+    flex-flow: row;
+    width:100%;
+    margin-top:50px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.social-media i{
+    color:black;
+}
+.education{
+    width:100%;
+    text-align: center;
+    padding:20px;
+    height:700px;
+
+}
+
+.education-header{
+    margin-top:40px;
+}   
+
+
+.education-header h2{
+    font-size: 30px;
+    font-family: fantasy;
+    color:#000;
+    letter-spacing: 0.01in;
+}
+
+.education-infos-1{
+    width:100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding:20px;
+    margin-top:50px;
+}
+
+.education-infos-2{
+    width:100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding:20px;
+    margin-top:50px;
+}
+
+
+.education-infos-left{
+    padding:10px;
+    text-align: left;
+}
+.education-infos-left h2{
+    font-size: 30px;
+    color:grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.education-infos-left h4{
+    font-size: 22px;
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    
+}
+.education-infos-left h5{
+    font-size: 15px;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+
+.education-infos-right h2{
+    font-size: 30px;
+    color:maroon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+
+}
+
+
+
+
+
+
+
+
+/* =====================Intrest=================== */
+
+.Intrest{
+    width:100%;
+    margin-top: 60px;
+    padding:20px;
+    background:rgb(219, 217, 217);
+    height:300px;
+}
+
+.Intrest-header{
+    text-align: center;
+    
+}
+
+.Intrest-header h2{
+    font-size: 30px;
+    color:black;
+    font-family: fantasy;
+}
+
+.Intrest-info{
+    width: 100%;
+    padding:20px;
+}
+
+.Intrest-info p{
+    color:grey;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
